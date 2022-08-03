@@ -1,10 +1,14 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
-int binary_to_int(int binary_digits[], int number_of_digits){
-    int dec = 0;
-    for (int i = 0; i < number_of_digits; i++){
-        dec = dec * 2 + binary_digits[i];
+int sum_if_palindrome(int integers[], int length){
+    int sum = 0;
+    for (int i = 0; i <= length/2; i++){
+        if (integers[i] != integers[length-i-1] || length < 1 ){
+            return -2;
+        }
     }
-    return dec;
+        for (int i = 0; i < length; i++){
+                sum = sum + integers[i];
+            }
+    return sum;
 }
