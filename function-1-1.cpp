@@ -7,10 +7,4 @@ void string_2d_copy(std::string first[][2], std::string second[][2], int n){
             second[r][c] = first[r][c];
         }
     }
-    for (int r = 0; r < n; r++){
-        for (int c = 0; c < 2; c++){
-            cout << second[r][c] << " ";
-        }
-        cout << endl;
-    }
 }
