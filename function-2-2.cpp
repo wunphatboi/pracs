@@ -3,6 +3,9 @@ using namespace std;
 int max_sub_sum(int *nums,int length){
     int max_sum = 0;
     int sum = 0;
+    if (length < 1){
+        return 0;
+    }else{
     while(length--){
         sum += *nums;
         if(sum < 0)
@@ -11,4 +14,5 @@ int max_sub_sum(int *nums,int length){
         nums++;
     }
 return max_sum;
+    }
 }
