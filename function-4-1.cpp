@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
-
 int* matrix_min_max(int **vals,int num_rows, int num_cols){
-    int min = INT_MAX;
-	int max = -INT_MAX;
+    int min = INT8_MAX;
+	int max = -INT8_MAX;
 	for(int r = 0; r < num_rows; r++) {
 		for(int c = 0; c < num_rows; c++) {
 			if(vals[r][c] > max) {
