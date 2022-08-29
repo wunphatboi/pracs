@@ -1,10 +1,15 @@
 #include <iostream>
+#include
 using namespace std;
 class Person{
     private:
     string name;
     int salary;
     public:
+    Person(){
+        name = " ";
+        salary = 0;
+    }
     Person(int mySalary, string myName){
         name = myName;
         salary = mySalary;
