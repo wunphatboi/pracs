@@ -5,6 +5,7 @@ class Person{
     string name;
     int salary;
     public:
+    Person();
     Person(int mySalary, string myName){
         name = myName;
         salary = mySalary;
