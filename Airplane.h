@@ -1,5 +1,5 @@
 #include <iostream>
-#include <Person.h>
+#include "Person.h"
 using namespace std;
 class Airplane{
     private:
@@ -7,6 +7,7 @@ class Airplane{
     Person theCoPilot;
     string callsign;
     public:
+    Airplane();
     Airplane(string callsign, Person thePilot, Person theCoPilot);
     void setPilot(Person thePilot);      
     Person getPilot();
