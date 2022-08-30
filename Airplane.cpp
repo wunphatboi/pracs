@@ -1,6 +1,5 @@
 #include <iostream>
-#include <Airplane.h>
-#include <Person.h>
+#include "Airplane.h"
 using namespace std;
 Airplane::Airplane(string callsign, Person thePilot, Person theCoPilot){
         thePilot = thePilot;
@@ -21,6 +20,6 @@ Airplane::Airplane(string callsign, Person thePilot, Person theCoPilot){
     }
     void Airplane::printDetails(){
         cout << callsign << endl;
-        cout << thePilot.getPilot() << endl;
-        cout << theCoPilot.getCoPilot() << endl;
+        cout << thePilot.getName() << endl;
+        cout << theCoPilot.getName() << endl;
     }   
