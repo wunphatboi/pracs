@@ -4,7 +4,7 @@ using namespace std;
 class Wagon{
     private:
     int counts;
-    Capybara w[5];
+    Capybara w[4];
     public:
     Wagon();                  
     bool addCapybara(Capybara newCapy);
