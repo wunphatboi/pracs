@@ -5,16 +5,15 @@ Wagon::Wagon(){
         counts = 0;
     }                            
    bool Wagon::addCapybara(Capybara newCapy){
-        if (counts == 3){
-            cout << "cart is full" << endl;
-            w[counts++] = newCapy;
+        if (counts > 3){
+            cout << "oops cannot add capybara: " << w[counts].getName() << " of age " << w[counts].getAge() << endl;
             return false;
-        }else if (counts > 3){
-            return false;
-        }
-            w[counts++] = newCapy;
+        }else {
+            w[counts] = newCapy;
+            counts++;
             return true;
-        }    
+        }  
+   }  
     void Wagon::emptyWagon(){
         for(int i=0;i<counts;i++){
             w[i].~Capybara();
