@@ -1,25 +1,21 @@
 #include <iostream>
+#include "Person.h"
 using namespace std;
-class Person{
-    private:
-    string name;
-    int salary;
-    public:
-    Person();
-    Person(int mySalary, string myName){
+
+Person::Person(){};
+Person::Person(int mySalary, string myName){
         name = myName;
         salary = mySalary;
     }
-    void setName(string myName){
+    void Person::setName(string myName){
         name = myName;
     }
-    string getName(){
+    string Person::getName(){
         return name;
     }
-    void setSalary(int mySalary){
+    void Person::setSalary(int mySalary){
         salary = mySalary;
     }
-    int getSalary(){
+    int Person::getSalary(){
         return salary;
     }
-};
