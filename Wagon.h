@@ -1,5 +1,7 @@
-#include <iostream>
+#ifndef WAGON_H
+#define WAGON_H
 #include "Capybara.h"
+#include <string>
 using namespace std;
 class Wagon{
     private:
@@ -11,3 +13,4 @@ class Wagon{
     void emptyWagon();       
     void printCapybaras();
 };
+#endif
