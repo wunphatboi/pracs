@@ -1,4 +1,6 @@
-#include <iostream>
+#ifndef PERSON_H
+#define PERSON_H
+#include <string>
 using namespace std;
 class Person{
     private:
@@ -6,20 +8,10 @@ class Person{
     int salary;
     public:
     Person();
-    Person(int mySalary, string myName){
-        name = myName;
-        salary = mySalary;
-    }
-    void setName(string myName){
-        name = myName;
-    }
-    string getName(){
-        return name;
-    }
-    void setSalary(int mySalary){
-        salary = mySalary;
-    }
-    int getSalary(){
-        return salary;
-    }
+    Person(int mySalary, string myName);
+    void setName(string myName);
+    string getName();
+    void setSalary(int mySalary);
+    int getSalary();
 };
+#endif
