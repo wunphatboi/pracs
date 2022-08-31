@@ -5,9 +5,9 @@
 using namespace std;
 class Airplane{
     private:
-    Person thePilot;
-    Person theCoPilot;
-    string callsign;
+    Person Pilot;
+    Person CoPilot;
+    string csign;
     public:
     Airplane();
     Airplane(string callsign, Person thePilot, Person theCoPilot);
