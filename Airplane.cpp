@@ -2,24 +2,24 @@
 #include "Airplane.h"
 using namespace std;
 Airplane::Airplane(string callsign, Person thePilot, Person theCoPilot){
-        thePilot = thePilot;
-        theCoPilot = theCoPilot;
-        callsign = callsign;
+        Pilot = thePilot;
+        CoPilot = theCoPilot;
+        csign = callsign;
     }
     void Airplane::setPilot(Person thePilot){
-        thePilot= thePilot;
+        Pilot= thePilot;
     }      
     Person Airplane::getPilot(){
-        return thePilot;
+        return Pilot;
     }
     void Airplane::setCoPilot(Person theCoPilot){
-        theCoPilot = theCoPilot;
+        CoPilot = theCoPilot;
     } 
     Person Airplane::getCoPilot(){
-        return theCoPilot;
+        return CoPilot;
     }
     void Airplane::printDetails(){
-        cout << callsign << endl;
-        cout << thePilot.getName() << endl;
-        cout << theCoPilot.getName() << endl;
+        cout << csign << endl;
+        cout << Pilot.getName() << endl;
+        cout << CoPilot.getName() << endl;
     }   
