@@ -4,16 +4,17 @@ using namespace std;
 Wagon::Wagon(){
         counts = 0;
     }                            
-    bool Wagon::addCapybara(Capybara newCapy){
-        if (counts == 4){
+   bool Wagon::addCapybara(Capybara newCapy){
+        if (counts == 3){
             cout << "cart is full" << endl;
             w[counts++] = newCapy;
             return false;
-        }else{
+        }else if (counts > 3){
+            return false;
+        }
             w[counts++] = newCapy;
             return true;
-        }
-    }    
+        }    
     void Wagon::emptyWagon(){
         for(int i=0;i<counts;i++){
             w[i].~Capybara();
