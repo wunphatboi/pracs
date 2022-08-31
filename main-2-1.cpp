@@ -19,7 +19,5 @@ int main(){
     w.addCapybara(c3);
     w.addCapybara(c4);
     w.addCapybara(c5);
-    //w.printCapybaras();
-    //w.emptyWagon();
     return 0;
 }
