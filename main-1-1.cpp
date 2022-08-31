@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Capybara.cpp"
+#include "Capybara.h"
 using namespace std;
 int main(){
 Capybara o1,o2,o3,o4;
