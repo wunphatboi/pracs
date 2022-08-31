@@ -6,7 +6,7 @@ Wagon::Wagon(){
     }                            
    bool Wagon::addCapybara(Capybara newCapy){
         if (counts > 3){
-            cout << "oops cannot add capybara: " << w[counts].getName() << " of age " << w[counts].getAge() << endl;
+            // cout << "oops cannot add capybara: " << w[counts].getName() << " of age " << w[counts].getAge() << endl;
             return false;
         }else {
             w[counts] = newCapy;
@@ -15,10 +15,7 @@ Wagon::Wagon(){
         }  
    }  
     void Wagon::emptyWagon(){
-        for(int i=0;i<counts;i++){
-            w[i].~Capybara();
-            counts=0;
-            }
+        counts = 0;
     }               
     void Wagon::printCapybaras(){
         for (int i = 0; i < counts; i++){
