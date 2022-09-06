@@ -2,7 +2,7 @@
 #include "Musician.h"
 using namespace std;
 Musician::Musician(){
-    std::string instrument = NULL;
+    std::string instrument = "NULL";
     int experience = 0;
 };
 Musician::Musician(std::string instrument, int experience){
