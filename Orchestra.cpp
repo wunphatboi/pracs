@@ -4,12 +4,12 @@ using namespace std;
 Orchestra::Orchestra(){
     max_size = 0;
     curr_size = 0;
-    members=new Musician[max_size];
+    members = new Musician[max_size];
 };
 Orchestra::Orchestra(int size){
-    size = max_size;
+    max_size=size;
     curr_size = 0;
-    members = new Musician[size];
+    members = new Musician[max_size];
 };
 int Orchestra::get_current_number_of_members(){
     return curr_size;
@@ -34,7 +34,5 @@ bool Orchestra::add_musician(Musician new_musician){
     return false;
 };
 Orchestra::~Orchestra(){
-    if(members != NULL){
-        delete []members;
-    }
+    delete[] members;
 };
