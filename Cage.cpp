@@ -19,7 +19,7 @@ int Cage::get_IDnum(){
     return id;
 };
 
-Cage::~Cage(){
+Cage::~Cage(){ 
     int newNumber = 0;
     std::string newName = "";
 };
