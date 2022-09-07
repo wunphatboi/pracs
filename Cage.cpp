@@ -2,8 +2,8 @@
 #include "Cage.h"
 using namespace std;
 Cage::Cage(){
-    int newNumber = 0;
-    std::string newName = "";
+    id = 0;
+    name = "";
 };
 
 Cage::Cage(std::string newName, int newNumber){
@@ -20,6 +20,4 @@ int Cage::get_IDnum(){
 };
 
 Cage::~Cage(){ 
-    int newNumber = 0;
-    std::string newName = "";
 };
