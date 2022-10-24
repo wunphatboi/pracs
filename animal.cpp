@@ -1,13 +1,13 @@
-#include"Animal.h"
-void Animal::set_name(string n){
+#include "animal.h"
+void animal::set_name(string n){
 name = n;
 }
-void Animal::set_volume(int vol){
+void animal::set_volume(int vol){
 volume = vol;
 }
-int Animal::get_volume(){
+int animal::get_volume(){
 return volume;
 }
-int Animal::get_animalID(){
+int animal::get_animalID(){
 return animalID;
 }
