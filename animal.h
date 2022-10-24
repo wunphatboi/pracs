@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Animal{
+class animal{
 private :
 int volume;
 protected:
