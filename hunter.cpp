@@ -20,13 +20,13 @@ animalID=nextID;
 
 // Define the member functions.
 
-int hunter::get_kill(){
+int hunter::get_kills(){
 
 return kills;
 
 }
 
-void hunter::set_kill(int k){
+void hunter::set_kills(int k){
 
 kills = k;
 
