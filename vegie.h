@@ -30,9 +30,9 @@ vegie(string , int );
 
 // Declare the member functions.
 
-string getFavourite();
+string favourite_food();
 
-void setFavourite(string n);
+void favourite_food(string n);
 
 string get_name();
 
