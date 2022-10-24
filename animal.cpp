@@ -22,6 +22,7 @@ volume=v;
 }
 
 std::string animal::get_name(){
+    return name;
 
 }
 
