@@ -10,7 +10,7 @@ int vegie::nextID = 100;
 
 vegie::vegie(string n ,int v):animal(n,v){
 
-favourite_food = "grass";
+favouritefood = "grass";
 
 nextID++;
 
@@ -22,7 +22,7 @@ animalID=nextID;
 
 string vegie::getFavourite(){
 
-return favourite_food;
+return favouritefood;
 
 }
 
@@ -34,6 +34,6 @@ return "Safe "+name;
 
 void vegie::setFavourite(string f){
 
-favourite_food = f;
+favouritefood = f;
 
 }
