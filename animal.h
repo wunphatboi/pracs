@@ -1,45 +1,24 @@
 #ifndef ANIMAL_H
-
 #define ANIMAL_H
 
-// Include the required header files.
-
-#include<iostream>
-
-using namespace std;
-
-// Define the class.
+#include <string>
 
 class animal{
-
-protected:
-
-string name;
-
-int animalID;
-
-int volume;
-
 public:
+animal();
+animal(std::string n, int v);
 
-// Declare the constructor.
-
-animal(string n ,int v);
-
-//Define the pure virtual function.
-
-virtual string get_name() = 0;
-
-// Declare the member functions.
-
-void set_name(string n);
-
+void set_name(std::string n);
 void set_volume(int v);
 
+virtual std::string get_name()=0;
+int get_animalID();
 int get_volume();
 
-int get_animalID();
+protected:
+std::string name ;
+int animalID ;
+int volume ;
 
 };
-
-#endif
+#endif ANIMAL_H
