@@ -1,41 +1,35 @@
-// Include the required header files.
-
 #include "animal.h"
+#include <iostream>
 
-// Define the constructor.
-
-animal::animal(string n ,int v){
-
+animal::animal(){
 animalID++;
+name="defaultname";
+volume=0;
+}
 
+animal::animal(std::string n, int v){
+animalID++;
 name=n;
-
-volume =v;
-
+volume=v;
 }
 
-// Define the member functions.
-
-void animal:: set_name(string n){
-
+void animal::set_name(std::string n){
 name=n;
+}
+
+void animal::set_volume(int v){
+volume=v;
+}
+
+std::string animal::get_name(){
 
 }
 
-void animal:: set_volume(int v){
-
-volume =v;
-
-}
-
-int animal:: get_volume(){
-
-return volume;
-
-}
-
-int animal:: get_animalID(){
-
+int animal::get_animalID(){
 return animalID;
-
 }
+
+int animal::get_volume(){
+return volume;
+}
+
