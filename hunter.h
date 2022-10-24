@@ -34,9 +34,9 @@ hunter(string n, int v);
 
 string get_name();
 
-int get_kill();
+int get_kills();
 
-void set_kill(int k);
+void set_kills(int k);
 
 };
 
