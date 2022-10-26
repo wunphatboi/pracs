@@ -6,7 +6,7 @@ Employee::Employee(int p){
 };
 
 void Employee::takeABreak(int mins){
-    while (energyLevel < 101){
+    if(energyLevel < 100){
     for (int i = 0; i < mins; i++){
         energyLevel = energyLevel + 2;
         if (energyLevel == 80){
@@ -14,6 +14,8 @@ void Employee::takeABreak(int mins){
             energyLevel = 84;
         }
     }
+    }else{
+        energyLevel = 100;
     }
 };
 
