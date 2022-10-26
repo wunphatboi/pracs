@@ -6,10 +6,10 @@ Employee::Employee(int p){
 };
 
 void Employee::takeABreak(int mins){
-    while (energyLevel <= 100){
+    while (energyLevel < 101){
     for (int i = 0; i < mins; i++){
         energyLevel = energyLevel + 2;
-        if (energyLevel = 80){
+        if (energyLevel == 80){
             mins = mins + 2;
             energyLevel = 84;
         }
